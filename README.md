@@ -1,9 +1,7 @@
-[![fxstcloud](https://fxstcloud.readthedocs.io/en/latest/_static/fxstcloud.png)](https://github.com/fxstlist/FXSTCLOUD)
+[![fxstcloud]( https://raw.githubusercontent.com/fxstlist/FXSTCLOUD/main/docs/_static/fxstcloud.png)](https://github.com/fxstlist/FXSTCLOUD)
 
-[![](https://img.shields.io/discord/1010915072694046794?label=discord&style=for-the-badge&logo=discord&color=5865F2&logoColor=white)](https://discord.gg/zfvbjTFxv6)
 [![](https://img.shields.io/pypi/v/fxstcloud.svg?style=for-the-badge&logo=pypi&color=yellow&logoColor=white)](https://pypi.org/project/fxstcloud/)
 [![](https://img.shields.io/pypi/l/fxstcloud?style=for-the-badge)](https://github.com/fxstlist/FXSTCLOUD/blob/main/LICENSE)
-[![](https://aschey.tech/tokei/github/fxstlist/FXSTCLOUD?style=for-the-badge)](https://github.com/fxstlist/FXSTCLOUD)
 
 An easy-to-use extension for [Discord.py](https://github.com/Rapptz/discord.py)
 and [Pycord](https://github.com/Pycord-Development/pycord) with some utility functions.

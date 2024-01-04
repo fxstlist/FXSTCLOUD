@@ -40,7 +40,7 @@ class DBHandler:
 
             async with DBHandler("fxstcloud.db") as db:
                 await db.exec("CREATE TABLE IF NOT EXISTS vip (id INTEGER PRIMARY KEY, name TEXT)")
-                await db.exec("INSERT INTO vip (name) VALUES (?)", "Timo")
+                await db.exec("INSERT INTO vip (name) VALUES (?)", "Fabo")
     """
 
     _auto_setup: list[DBHandler] = []
@@ -126,7 +126,7 @@ class DBHandler:
                         await db.exec(
                             "CREATE TABLE IF NOT EXISTS vip (id INTEGER PRIMARY KEY, name TEXT)"
                         )
-                        await db.exec("INSERT INTO vip (name) VALUES (?)", "Timo")
+                        await db.exec("INSERT INTO vip (name) VALUES (?)", "Fabo")
         """
         cls = deepcopy(self)
         cls.auto_connect = True

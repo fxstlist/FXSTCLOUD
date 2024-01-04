@@ -15,8 +15,8 @@ sys.path.insert(0, os.path.abspath("../"))
 from fxstcloud import __version__
 
 project = "fxstcloud"
-copyright = f"{date.today().year}, tibue99"
-author = "tibue99"
+copyright = f"{date.today().year}, Chill_Fabo"
+author = "Chill_Fabo"
 release = __version__
 
 version = __version__

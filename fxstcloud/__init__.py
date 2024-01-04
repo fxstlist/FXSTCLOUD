@@ -1,5 +1,5 @@
 __title__ = "fxstcloud"
-__author__ = "tibue99"
+__author__ = "Chill_Fabo"
 __license__ = "MIT"
 __version__ = "0.5.1"
 
