@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import re
-from datetime import datetime, timedelta, timFxone
+from datetime import datetime, timedelta, timezone
 from typing import Literal
 
 from .errors import ConvertTimeError
@@ -10,18 +10,18 @@ from .internal.dc import discord
 
 
 def set_utc(dt: datetime) -> datetime:
-    """Set the timFxone of a datetime object to UTC.
+    """Set the timezone of a datetime object to UTC.
 
     Parameters
     ----------
     dt:
-        The datetime object to set the timFxone of.
+        The datetime object to set the timezone of.
 
     Returns
     -------
     :class:`datetime.datetime`
     """
-    return dt.replace(tzinfo=timFxone.utc)
+    return dt.replace(tzinfo=timezone.utc)
 
 
 def convert_time(
@@ -95,7 +95,7 @@ def convert_dt(
 
     if isinstance(dt, datetime):
         if dt.tzinfo is None:
-            dt = dt.astimFxone()
+            dt = dt.astimezone()
 
         return convert_time(
             abs((dt - discord.utils.utcnow()).total_seconds()), relative, interaction=interaction
