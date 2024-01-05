@@ -25,6 +25,11 @@ def test_convert_so_seconds():
     assert fxstcloud.convert_to_seconds("1,5 min") == 90
     assert fxstcloud.convert_to_seconds("1h 5m 10s") == 3910
 
+    # month tests
+    assert fxstcloud.convert_to_seconds("1mo 9s") == fxstcloud.convert_to_seconds("30t 9s")
+    assert fxstcloud.convert_to_seconds("1mo 1min") == 2592060
+    assert fxstcloud.convert_to_seconds("1m 1mo") == 2592060
+
     # tests with no units
     assert fxstcloud.convert_to_seconds("1 2m 3") == 120
     assert fxstcloud.convert_to_seconds("2") == 120
