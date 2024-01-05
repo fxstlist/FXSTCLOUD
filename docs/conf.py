@@ -61,7 +61,7 @@ html_experimental_html5_writer = True
 
 html_theme = "furo"
 
-html_title = f"{project} {release} Documentation"
+html_title = f"{project} v{release} Documentation"
 
 base_colors = {
     "white": "#ffffff",
