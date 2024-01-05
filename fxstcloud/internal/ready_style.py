@@ -8,6 +8,8 @@ from typing import TYPE_CHECKING
 
 from colorama import Fore
 
+import platform
+
 from .. import __version__
 from ..enums import ReadyEvent
 from ..internal.dc import discord
@@ -42,12 +44,14 @@ DEFAULT_COLORS: list[str] = [Fore.CYAN, Fore.MAGENTA, Fore.YELLOW, Fore.GREEN, F
 
 def get_default_info(bot: Bot) -> list[tuple[str, str]]:
     lib_name = discord.lib.capitalize()
+    
     return [
         ("Bot", f"{bot.user}"),
-        ("ID", f"{bot.user.id}"),
         (lib_name, discord.__version__),
-        ("Commands", f"{bot.cmd_count:,}"),
+        ("Python", f"{platform.python_version()}"),
+        ("Commands", f"{len(bot.cmd_count):,}"),
         ("Guilds", f"{len(bot.guilds):,}"),
+        ("Users", f"{len(bot.users)}"),
         ("Latency", f"{round(bot.latency * 1000):,}ms"),
     ]
 

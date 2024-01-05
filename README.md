@@ -1,4 +1,5 @@
-[![fxstcloud]( https://raw.githubusercontent.com/fxstlist/FXSTCLOUD/main/docs/_static/fxstcloud.png)](https://github.com/fxstlist/FXSTCLOUD)
+Fxstcloud
+=====
 
 [![](https://img.shields.io/pypi/v/fxstcloud.svg?style=for-the-badge&logo=pypi&color=yellow&logoColor=white)](https://pypi.org/project/fxstcloud/)
 [![](https://img.shields.io/pypi/l/fxstcloud?style=for-the-badge)](https://github.com/fxstlist/FXSTCLOUD/blob/main/LICENSE)
