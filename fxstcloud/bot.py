@@ -570,7 +570,7 @@ class Bot(_main_bot):  # type: ignore
         embed:
             The embed to use for the help command. If this is ``None``, a default
             embed will be used.
-            All templates variables that are listed in :meth: `fxstcloud.emb.set_embed_templates`
+            All template variables that are listed in :meth:`fxstcloud.emb.set_embed_templates`
             can be used here.
         show_categories:
             Whether to display the categories of the help command front page. Defaults to ``True``.
