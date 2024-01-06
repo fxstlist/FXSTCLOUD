@@ -449,6 +449,10 @@ class Bot(_main_bot):  # type: ignore
                 perms = "\n".join(error.missing_permissions)
                 perm_txt = f"{t('no_perms', i=ctx)} ```\n{perms}```"
                 await error_emb(ctx, perm_txt, title=t("no_perms_title", i=ctx))
+                
+        elif isinstance(error, commands.NotOwner):
+            if self.error_handler:
+                await error_emb(ctx, t("no_user_perms", i=ctx))
 
         else:
             if "original" in error.__dict__ and not self.full_error_traceback:
